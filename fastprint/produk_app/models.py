@@ -8,7 +8,7 @@ class Kategori(models.Model):
         db_table = 'kategori'
         managed = False
 
-    # Tambahkan ini agar muncul nama kategorinya
+    # Fungsi ini supaya di dropdown muncul nama kategorinya (bukan "object")
     def __str__(self):
         return self.nama_kategori
 
@@ -20,7 +20,7 @@ class Status(models.Model):
         db_table = 'status'
         managed = False
 
-    # Tambahkan ini agar muncul nama statusnya
+   
     def __str__(self):
         return self.nama_status
 
