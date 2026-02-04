@@ -22,17 +22,17 @@ Proyek ini adalah aplikasi manajemen inventaris produk yang dikembangkan menggun
 ## 🖼️ Tampilan Antarmuka
 
 ### 1. Homepage (Daftar Produk)
-![Homepage](https://github.com/user-attachments/assets/22ac9799-eb3e-4340-8451-830843236e76)
+![Homepage](https://github.com/Tuck112/fastprint_test/blob/main/Homepage_dokumentasi.png)
 * **Daftar Produk**: Menampilkan data dalam bentuk tabel dengan label warna untuk kategori.
 * **Filter Status**: Memisahkan produk layak jual dan produk arsip secara otomatis melalui tab navigasi.
 
 ### 2. Tambah & Edit Produk
-![Tambah Produk](https://github.com/user-attachments/assets/5625ebb2-ca82-4c6e-8848-038753236e76)
+![Tambah Produk](https://github.com/Tuck112/fastprint_test/blob/main/Input%20data_dokumentasi.png)
 * **Form Dinamis**: Antarmuka menggunakan `ModelForm` untuk validasi otomatis.
 * **Dropdown Terintegrasi**: Kolom Kategori dan Status mengambil data relasi (*Foreign Key*) langsung dari database.
 
 ### 3. Keamanan Data (Pop-up Konfirmasi)
-![Konfirmasi Hapus](https://github.com/user-attachments/assets/5625ebb2-ca82-4c6e-8848-038753236e76)
+![Konfirmasi Hapus](https://github.com/Tuck112/fastprint_test/blob/main/pop%20up%20konfirmasi_dokumentasi.png)
 * **Pop-up Konfirmasi**: Muncul peringatan browser sebelum pengguna menghapus data untuk mencegah kesalahan fatal.
 
 ## ⚙️ Cara Instalasi & Menjalankan Proyek
