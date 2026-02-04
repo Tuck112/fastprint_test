@@ -50,6 +50,9 @@ Bash
 python manage.py runserver
 Akses aplikasi di: http://127.0.0.1:8000/
 
+## 📂 Struktur Repositori
+
+```text
 fastprint_test/
 ├── fastprint/          # Konfigurasi utama proyek Django
 ├── produk_app/         # Aplikasi inti (Models, Views, Forms)
