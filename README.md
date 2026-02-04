@@ -1,62 +1,64 @@
-🚀 Fitur Utama
-Manajemen Produk (CRUD): Tambah, Lihat, Edit, dan Hapus produk secara real-time.
+# Fastprint Inventory Management System
 
-Filter Status Otomatis: Memisahkan produk yang "Bisa Dijual" dan produk yang harus diarsip ("Tidak Bisa Dijual").
+Proyek ini adalah aplikasi manajemen inventaris produk yang dikembangkan menggunakan **Django** dan **MySQL** sebagai bagian dari tes seleksi Junior Programmer di Fastprint Indonesia.
 
-Dropdown Dinamis: Menggunakan relasi tabel untuk Kategori dan Status produk.
+## 🚀 Fitur Utama
+* **CRUD Produk**: Create, Read, Update, dan Delete data produk secara dinamis.
+* **Filter Status Otomatis**: Memisahkan tampilan produk yang "Bisa Dijual" dan produk yang masuk kategori "Tidak Bisa Dijual" (Arsip).
+* **Dropdown Dinamis**: Menggunakan relasi tabel (Foreign Key) untuk Kategori dan Status produk.
+* **UI Responsif**: Menggunakan Bootstrap 5 untuk tampilan yang bersih dan profesional.
+* **Integrasi Database**: Menggunakan database MySQL yang sudah ada (*legacy database support*) dengan konfigurasi `managed = False`.
 
-UI Responsif: Dibangun dengan Bootstrap 5 agar nyaman diakses dari perangkat apapun.
+---
 
-Integrasi Database: Menggunakan database MySQL yang sudah ada (legacy database support).
+## 🛠️ Teknologi yang Digunakan
+* **Backend**: Python 3.x & Django Framework.
+* **Database**: MySQL (XAMPP/Laragon).
+* **Frontend**: Bootstrap 5 & Django Template Language (DTL).
+* **Library**: `mysqlclient` (koneksi database) & `requests` (integrasi API).
 
-🛠️ Struktur Kode Teknis
-Proyek ini mengikuti pola desain MVT (Model-View-Template):
+---
 
-Models: Menggunakan managed = False untuk menghubungkan aplikasi dengan tabel MySQL yang dibuat secara manual. Fungsi __str__ diterapkan untuk memastikan keterbacaan data pada antarmuka admin dan form.
+## ⚙️ Cara Instalasi & Menjalankan Proyek
 
-Views: Berisi logika bisnis, termasuk penggunaan filter() dan exclude() untuk pemisahan status barang.
+1. **Clone Repositori**
+   ```bash
+   git clone [https://github.com/Tuck112/fastprint_test.git](https://github.com/Tuck112/fastprint_test.git)
+   cd fastprint_test
 
-Forms: Menggunakan ModelForm dengan widgets Bootstrap untuk memvalidasi input dan mempercepat pembuatan UI.
-
-Templates: Menggunakan sintaks Django Template Language (DTL) untuk menampilkan data secara dinamis dan aman.
-
-📋 Prasyarat Sistem
-Python 3.x
-
-MySQL (XAMPP/Laragon)
-
-Library: django, mysqlclient
-
-⚙️ Cara Instalasi & Menjalankan Proyek
-Clone Repositori
-
-Bash
-git clone https://github.com/Tuck112/fastprint_test.git
-cd fastprint_test
 Setup Virtual Environment
 
 Bash
 python -m venv venv
 # Aktivasi di Windows:
 .\venv\Scripts\activate
-Install Dependensi
+Install Dependensi Pastikan Anda sudah berada di dalam folder proyek sebelum menjalankan perintah ini:
 
 Bash
 pip install -r requirements.txt
-Konfigurasi Database Pastikan MySQL Anda aktif dan buat database bernama db_fastprint (atau sesuai setelan di settings.py). Import tabel produk, kategori, dan status.
+Konfigurasi Database
+
+Aktifkan MySQL (XAMPP/Laragon).
+
+Buat database dengan nama db_fastprint.
+
+Sesuaikan DATABASES di file fastprint/settings.py jika username/password MySQL Anda berbeda.
 
 Jalankan Server
 
 Bash
 python manage.py runserver
-Buka browser dan akses http://127.0.0.1:8000/.
+Akses aplikasi di: http://127.0.0.1:8000/
 
 📂 Struktur Repositori
 Plaintext
 fastprint_test/
-├── fastprint/          # Konfigurasi utama Django
+├── fastprint/          # Konfigurasi utama proyek Django
 ├── produk_app/         # Aplikasi inti (Models, Views, Forms)
-├── templates/          # File HTML (UI)
-├── .gitignore          # File untuk mengecualikan folder venv
+│   ├── models.py       # Definisi tabel & relasi database
+│   ├── views.py        # Logika bisnis & pengelolaan data
+│   └── forms.py        # Validasi & styling form Bootstrap
+├── templates/          # File HTML (UI/Antarmuka)
+├── .gitignore          # Pengaturan pengecualian file (seperti venv)
 ├── requirements.txt    # Daftar library yang diperlukan
-└── README.md           # Dokumentasi ini
+└── README.md           # Dokumentasi proyek
