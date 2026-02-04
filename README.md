@@ -54,3 +54,50 @@ Aplikasi ini dibuat untuk membantu admin dalam:
 5. Saat menambah atau mengedit produk:
    - Kategori dan status dipilih melalui dropdown
 6. Data tersimpan langsung ke database MySQL
+
+## 🛠️ Teknologi yang Digunakan & Cara Menjalankan Proyek
+
+### Teknologi yang Digunakan
+
+- **Backend**: Python 3.x, Django
+- **Database**: MySQL (XAMPP / Laragon)
+- **Frontend**: Bootstrap 5, Django Template Language
+- **Library Tambahan**:
+  - `mysqlclient` (koneksi database MySQL)
+  - `requests` (integrasi API eksternal)
+
+---
+
+### ⚙️ Cara Instalasi & Menjalankan Proyek
+
+#### Clone Repository
+```bash
+git clone https://github.com/Tuck112/fastprint_test.git
+cd fastprint_test
+Buat & Aktifkan Virtual Environment
+python -m venv venv
+.\venv\Scripts\activate
+Install Dependensi
+pip install -r requirements.txt
+Konfigurasi Database
+Aktifkan MySQL (XAMPP / Laragon)
+
+Buat database:
+
+db_fastprint
+Sesuaikan konfigurasi database di:
+
+fastprint/settings.py
+Jalankan Server
+python manage.py runserver
+Akses aplikasi di browser:
+
+http://127.0.0.1:8000/
+📂 Struktur Proyek
+Struktur Saat Ini
+fastprint_test/
+├── fastprint/
+├── produk_app/
+├── templates/
+├── manage.py
+└── requirements.txt
