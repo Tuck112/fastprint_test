@@ -63,3 +63,20 @@ fastprint_test/
 ├── .gitignore          # Pengaturan pengecualian file (seperti venv)
 ├── requirements.txt    # Daftar library yang diperlukan
 └── README.md           # Dokumentasi proyek
+
+## HOMEPAGE
+<img width="1907" height="1087" alt="image" src="https://github.com/user-attachments/assets/2d04447e-6002-4a16-bf8a-586148190bdb" />
+Aplikasi ini memiliki antarmuka yang bersih dan fungsional:
+1. **Daftar Produk**: Menampilkan data dalam bentuk tabel dengan label warna untuk kategori.
+2. **Filter Status**: Memisahkan produk layak jual dan produk arsip secara otomatis.
+3. **Form Dinamis**: Memudahkan pengelolaan data (Tambah/Edit) dengan validasi input.
+
+## TAMBAH PRODAK
+<img width="1917" height="1093" alt="image" src="https://github.com/user-attachments/assets/22ac9799-eb3c-41e3-8a44-a31b521968fc" />
+1. **Form Dinamis**: Antarmuka tambah produk menggunakan ModelForm untuk validasi otomatis.
+2. **Dropdown Terintegrasi**: Kolom Kategori dan Status mengambil data relasi (Foreign Key) langsung dari database.
+3. **Clean Design**: Tampilan form menggunakan card.
+
+## POP UP KONFIRMASI
+<img width="1911" height="1092" alt="image" src="https://github.com/user-attachments/assets/5625ebb2-ca0b-4f8b-a2d9-8afbd232d72f" />
+1.Pop up konfirmasi yang muncul apabila user menekan buttom hapus
