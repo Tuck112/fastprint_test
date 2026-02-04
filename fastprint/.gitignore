@@ -1,0 +1,16 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+ENV/
+env/
+
+# Database local (jika ada sqlite)
+*.sqlite3
+
+# Folder IDE
+.vscode/
+.idea/
