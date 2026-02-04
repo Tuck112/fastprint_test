@@ -65,7 +65,7 @@ fastprint_test/
 └── README.md           # Dokumentasi proyek
 
 ## HOMEPAGE
-<img width="1907" height="1087" alt="image" src="https://github.com/user-attachments/assets/2d04447e-6002-4a16-bf8a-586148190bdb" />
+<img width="1907" height="1087" alt="Cuplikan layar 2026-02-05 001010" src="https://github.com/user-attachments/assets/55611e0a-be34-43d6-985f-5a3e9a576afd" />
 Aplikasi ini memiliki antarmuka yang bersih dan fungsional:
 1. **Daftar Produk**: Menampilkan data dalam bentuk tabel dengan label warna untuk kategori.
 2. **Filter Status**: Memisahkan produk layak jual dan produk arsip secara otomatis.
